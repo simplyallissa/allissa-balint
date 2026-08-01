@@ -121,8 +121,8 @@ const SKILLS = [
 const EDUCATION = [
   { degree: "BA, Computer Science", school: "CU Denver", detail: "3.5 GPA" },
   { degree: "MFA, Creative Writing", school: "Regis University", detail: "4.0 GPA" },
-  { degree: "BA, Creative Writing", school: "Arkansas Tech University" },
-  { degree: "BA, Speech-Theater", school: "Arkansas Tech University" },
+  { degree: "BA, Creative Writing", school: "Arkansas Tech University", detail: "3.7 GPA" },
+  { degree: "BA, Speech-Theater", school: "Arkansas Tech University", detail: "3.7 GPA" },
 ];
 
 export default function Home() {
@@ -278,17 +278,17 @@ export default function Home() {
           <h2 className="font-display text-3xl font-medium">Education</h2>
           <div className="mt-3 h-0.5 w-16 bg-[var(--rust)]"></div>
         </div>
-        <ul className="space-y-3">
+        <div className="grid gap-4 sm:grid-cols-2">
           {EDUCATION.map((e) => (
-            <li key={e.degree}>
+            <div key={e.degree}>
               <p className="font-medium">{e.degree}</p>
               <p className="text-[15px] text-neutral-700">
                 {e.school}
                 {e.detail ? `, ${e.detail}` : ""}
               </p>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </section>
 
       {/* Outside work */}

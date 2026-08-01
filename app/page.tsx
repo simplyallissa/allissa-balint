@@ -16,7 +16,7 @@ const FEATURED = [
       { label: "Connect to Azure Blob Storage", href: "/pdfs/connect-azure-blob.pdf" },
       { label: "Implement a rollback strategy with SQL changelogs for existing databases", href: "https://docs.liquibase.com/secure/implementation-guide-5-2-1/implement-a-rollback-strategy-with-sql-changelogs-for-existing-databases" },
       { label: "Troubleshooting rollback issues (knowledge base article)", href: "https://support.liquibase.com/hc/en-us/articles/43904501295643-Troubleshooting-rollback-issues" },
-      { label: "Before and after screenshots from the migration", href: "/images/before-after-content-migration.jpg" },
+      { label: "Before and after screenshots of the MadCap Flare to Contentful and React site migration", href: "/images/before-after-content-migration.jpg" },
     ],
   },
   {

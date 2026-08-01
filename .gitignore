@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# scaffold-injected agent metadata (not needed in repo)
+AGENTS.md
+CLAUDE.md

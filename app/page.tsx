@@ -101,7 +101,16 @@ const FEATURED = [
   },
 ];
 
-const OTHER_EXPERIENCE = [
+type OtherJob = {
+  company: string;
+  role: string;
+  dates: string;
+  note: string;
+  link?: string;
+  sample?: { label: string; href: string };
+};
+
+const OTHER_EXPERIENCE: OtherJob[] = [
   {
     company: "Amazon",
     role: "Technical Writer",

@@ -108,13 +108,6 @@ const EDUCATION = [
 export default function Home() {
   return (
     <main className="relative mx-auto w-full px-6 py-12 md:px-16 md:py-16 lg:px-24 xl:px-32">
-      {/* Monogram mark, fixed top-left */}
-      <div
-        aria-label="Allissa Balint"
-        className="fixed top-5 left-5 z-20 flex h-11 w-11 items-center justify-center bg-[var(--ink)] shadow-sm md:top-8 md:left-8"
-      >
-        <span className="font-display text-sm font-semibold tracking-tight text-white">AB</span>
-      </div>
       {/* Decorative background splashes, fixed to viewport */}
       <div
         aria-hidden

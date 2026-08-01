@@ -52,6 +52,31 @@ const FEATURED = [
     ],
   },
   {
+    company: "National Renewable Energy Laboratory",
+    role: "Utility Rate Database Intern",
+    dates: "Apr 2024 to Apr 2025",
+    link: "https://openei.org/wiki/Utility_Rate_Database",
+    bullets: [
+      "Researched and maintained utility rate data across all 50 states by sourcing directly from energy company documentation, enabling accurate cost estimates for users in any US region.",
+      "Wrote a Python script to calculate percentage-based adjustments on energy rates, automating a previously manual process.",
+      "Updated the Utility Rate API documentation in a docs-as-code workflow.",
+    ],
+    beforeAfter: {
+      before: [
+        { label: "Main Menu", href: "/pdfs/urdb_before_update_main_menu.pdf" },
+        { label: "Utility Rates Endpoint", href: "/pdfs/urdb_before_update_util_rates.pdf" },
+        { label: "Utility Companies Endpoint", href: "/pdfs/urdb_before_update_util_cos.pdf" },
+        { label: "Recommendations Endpoint", href: "/pdfs/urdb_before_update_recommend.pdf" },
+      ],
+      after: [
+        { label: "Main Menu", href: "/pdfs/updated_urdb_main_menu.pdf" },
+        { label: "Utility Rates Endpoint", href: "/pdfs/updated_urdb_util_rates.pdf" },
+        { label: "Utility Companies Endpoint", href: "/pdfs/updated_urdb_util_cos.pdf" },
+        { label: "Recommendations Endpoint", href: "/pdfs/updated_urdb_recommend.pdf" },
+      ],
+    },
+  },
+  {
     company: "MEPCAD / AutoSPRINK",
     role: "Technical Writer",
     dates: "Feb 2018 to Feb 2021",
@@ -66,22 +91,15 @@ const FEATURED = [
       "Completed an 8-month Node.js course to support site maintenance and backend tooling.",
       "Also shipped 3 companion news apps for Android (Java) and iOS (Swift) with Firebase login and live content updates, and assisted with a Windows-compatible embedded News Pane.",
     ],
-    images: [
-      { src: "/images/1.png", alt: "AutoSPRINK RVT News app screenshot" },
-      { src: "/images/fab.png", alt: "AutoSPRINK FAB documentation site screenshot" },
-      { src: "/images/pane.png", alt: "Embedded News Pane screenshot" },
+    samples: [
+      { label: "AutoSPRINK RVT News app screenshot", href: "/images/1.png" },
+      { label: "AutoSPRINK FAB documentation site screenshot", href: "/images/fab.png" },
+      { label: "Embedded News Pane screenshot", href: "/images/pane.png" },
     ],
   },
 ];
 
 const OTHER_EXPERIENCE = [
-  {
-    company: "National Renewable Energy Laboratory",
-    role: "Utility Rate Database Intern",
-    dates: "Apr 2024 to Apr 2025",
-    link: "https://openei.org/wiki/Utility_Rate_Database",
-    note: "Researched and maintained utility rate data across all 50 states, wrote a Python script to automate percentage-based rate adjustments, and updated the Utility Rate API documentation in a docs-as-code workflow.",
-  },
   {
     company: "Amazon",
     role: "Technical Writer",
@@ -188,20 +206,6 @@ export default function Home() {
                   <li key={i}>{b}</li>
                 ))}
               </ul>
-
-              {job.images && job.images.length > 0 && (
-                <div className={`mb-4 grid gap-3 ${job.images.length > 1 ? "sm:grid-cols-3" : ""}`}>
-                  {job.images.map((img) => (
-                    <div key={img.src} className="overflow-hidden rounded-lg border border-neutral-200 bg-white">
-                      <img
-                        src={img.src}
-                        alt={img.alt}
-                        className="h-auto w-full object-cover"
-                      />
-                    </div>
-                  ))}
-                </div>
-              )}
 
               {job.samples && job.samples.length > 0 && (
                 <div className="rounded-lg border border-neutral-200 bg-white p-4">

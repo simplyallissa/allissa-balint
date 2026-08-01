@@ -232,6 +232,36 @@ export default function Home() {
                   </ul>
                 </div>
               )}
+
+              {"beforeAfter" in job && job.beforeAfter && (
+                <div className="rounded-lg border border-neutral-200 bg-white p-4">
+                  <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-neutral-500">
+                    Samples
+                  </p>
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    <div>
+                      <p className="mb-2 text-xs font-semibold text-neutral-700">Before</p>
+                      <ul className="space-y-1 text-sm">
+                        {job.beforeAfter.before.map((s) => (
+                          <li key={s.href}>
+                            <a href={s.href}>{s.label}</a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="mb-2 text-xs font-semibold text-neutral-700">After</p>
+                      <ul className="space-y-1 text-sm">
+                        {job.beforeAfter.after.map((s) => (
+                          <li key={s.href}>
+                            <a href={s.href}>{s.label}</a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              )}
             </article>
           ))}
         </div>

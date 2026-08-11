@@ -7,9 +7,10 @@ const FEATURED = [
     dates: "May 2025 to present",
     link: "https://www.liquibase.com/",
     bullets: [
-      "Designed and built the AI-augmented editorial workflow end to end, including Claude agents and skills that draft API reference and conceptual documentation, shared editorial standards, and prompt tuning to keep output consistent with the team's voice.",
-      "Led the documentation restructure during the platform migration from MadCap Flare to Contentful, updating existing content for the new information architecture.",
-      "Built Node.js tooling against the Contentful API to export data and execute bulk content changes at scale.",
+      "Designed and built the AI-augmented editorial workflow end to end. 3 Claude agents and 15+ skills draft API reference and conceptual documentation, backed by a shared editorial standards library and prompt tuning that keeps output aligned with the team's voice.",
+      "Cut per-doc draft time from days to hours. Moved ticket triage from fully manual review to automated processing with a human review gate at publish.",
+      "Led the documentation restructure during the migration of about 1,000 files from MadCap Flare to Contentful, updating existing content for the new information architecture.",
+      "Built Node.js tooling on the Contentful Management API to export data and execute bulk content changes at scale.",
       "Maintain the docs site end to end, from content to search to structural improvements.",
     ],
     samples: [
